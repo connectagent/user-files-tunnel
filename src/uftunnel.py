@@ -377,7 +377,7 @@ async def tunnel_loop(relay_url: str, token: str, user_id: str | None = None,
                                           max_size=64 * 1024 * 1024,
                                           ping_interval=None,  # managed by _ping_loop
                                           ) as ws:
-                print(f"[fstunnel] Connected.")
+                print(f"[fstunnel] Connected with user_id: {user_id}.")
                 ping_task = asyncio.create_task(_ping_loop(ws))
                 try:
                     async for raw_message in ws:

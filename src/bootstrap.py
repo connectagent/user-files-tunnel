@@ -11,9 +11,11 @@ from overrides import AUTHORIZE_DOMAIN
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_CONNECT_URL = f'http://{AUTHORIZE_DOMAIN}/connect'
-DEFAULT_POLL_URL = f'http://{AUTHORIZE_DOMAIN}/api/connect/poll'
+#DEFAULT_CONNECT_URL = f'http://{AUTHORIZE_DOMAIN}/connect'
+#DEFAULT_POLL_URL = f'http://{AUTHORIZE_DOMAIN}/api/connect/poll'
 
+DEFAULT_CONNECT_URL = f'http://{AUTHORIZE_DOMAIN}/connect'
+DEFAULT_POLL_URL = f'http://{AUTHORIZE_DOMAIN}//poll'
 
 
 def wait_for_keypress():
